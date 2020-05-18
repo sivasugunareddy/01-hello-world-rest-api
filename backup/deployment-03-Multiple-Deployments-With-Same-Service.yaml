@@ -24,7 +24,8 @@ spec:
         version: v1
     spec:
       containers:
-      - image: atingupta2005/hello-world-rest-api:0.0.1.RELEASE
+      - image: atingupta2005/hello-world-rest-api:latest
+      #- image: atingupta2005/hello-world-rest-api:0.0.1.RELEASE
         imagePullPolicy: IfNotPresent
         name: hello-world-rest-api
       restartPolicy: Always
