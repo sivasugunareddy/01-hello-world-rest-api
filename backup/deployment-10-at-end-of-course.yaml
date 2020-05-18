@@ -5,7 +5,6 @@ metadata:
     app: hello-world-rest-api
     version: v1
   name: hello-world-rest-api-v1
-  namespace: default
 spec:
   replicas: 2
   minReadySeconds: 45
@@ -38,7 +37,6 @@ metadata:
     app: hello-world-rest-api
     version: v2
   name: hello-world-rest-api-v2
-  namespace: default
 spec:
   replicas: 2
   minReadySeconds: 45
@@ -70,7 +68,6 @@ metadata:
   labels: #PODS
     app: hello-world-rest-api
   name: hello-world-rest-api
-  namespace: default
 spec:
   ports:
   - nodePort: 30702
