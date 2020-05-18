@@ -4,7 +4,6 @@ metadata:
   labels:
     app: hello-world-rest-api
   name: hello-world-rest-api
-  namespace: default
 spec:
   replicas: 2
   selector:
@@ -33,7 +32,6 @@ metadata:
   labels:
     app: hello-world-rest-api
   name: hello-world-rest-api
-  namespace: default
 spec:
   ports:
   - nodePort: 30702
