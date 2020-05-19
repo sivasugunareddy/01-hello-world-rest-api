@@ -8,8 +8,7 @@ metadata:
   labels:
     app: hello-world-rest-api
   name: hello-world-rest-api
-  namespace: default
-  resourceVersion: "50995"
+    resourceVersion: "50995"
   selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/hello-world-rest-api
   uid: 214feee4-0118-11ea-93cd-42010a800224
 spec:
@@ -31,7 +30,8 @@ spec:
         app: hello-world-rest-api
     spec:
       containers:
-      - image: atingupta2005/hello-world-rest-api:0.0.2.RELEASE
+      - image: atingupta2005/hello-world-rest-api:latest
+      #- image: atingupta2005/hello-world-rest-api:0.0.2.RELEASE
         imagePullPolicy: IfNotPresent
         name: hello-world-rest-api
         resources: {}

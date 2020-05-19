@@ -5,7 +5,6 @@ metadata:
     app: hello-world-rest-api
     version: v1
   name: hello-world-rest-api-v1
-  namespace: default
 spec:
   replicas: 2
   minReadySeconds: 45
@@ -25,7 +24,8 @@ spec:
         version: v1
     spec:
       containers:
-      - image: atingupta2005/hello-world-rest-api:0.0.1.RELEASE
+      - image: atingupta2005/hello-world-rest-api:latest
+      #- image: atingupta2005/hello-world-rest-api:0.0.1.RELEASE
         imagePullPolicy: IfNotPresent
         name: hello-world-rest-api
       restartPolicy: Always
@@ -38,7 +38,6 @@ metadata:
     app: hello-world-rest-api
     version: v2
   name: hello-world-rest-api-v2
-  namespace: default
 spec:
   replicas: 2
   minReadySeconds: 45
@@ -70,7 +69,6 @@ metadata:
   labels: #PODS
     app: hello-world-rest-api
   name: hello-world-rest-api
-  namespace: default
 spec:
   ports:
   - nodePort: 30702

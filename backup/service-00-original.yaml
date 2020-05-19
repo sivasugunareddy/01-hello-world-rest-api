@@ -5,8 +5,7 @@ metadata:
   labels:
     app: hello-world-rest-api
   name: hello-world-rest-api
-  namespace: default
-  resourceVersion: "1874"
+    resourceVersion: "1874"
   selfLink: /api/v1/namespaces/default/services/hello-world-rest-api
   uid: 455bd0b1-0118-11ea-93cd-42010a800224
 spec:
