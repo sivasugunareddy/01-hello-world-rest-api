@@ -15,7 +15,7 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/")
 	public String imUpAndRunning() {
-		return "{healthy2:true}";
+		return "{healthy:true}";
 	}
 
 	
@@ -26,12 +26,12 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
-		return new HelloWorldBean("Hello World Atin");
+		return new HelloWorldBean("Hello World V4 Atin");
 	}
 
 	/// hello-world/path-variable/in28minutes
 	@GetMapping(path = "/hello-world/path-variable/{name}")
 	public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
-		return new HelloWorldBean(String.format("Hello World Atin Sample, %s", name));
+		return new HelloWorldBean(String.format("Hello World V4 Atin Sample, %s", name));
 	}
 }
